@@ -31,7 +31,6 @@ int main()
 			add ax, 8
 			jmp label4
 
-
 			label5 :
 		mov ax, a
 			mov bx, 2
@@ -40,9 +39,6 @@ int main()
 
 			label4 :
 		mov y1, ax
-
-
-
 
 			mov ax, x
 			mov bx, a

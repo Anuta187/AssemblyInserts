@@ -14,7 +14,6 @@ x word ?
 y word ?
 COORD ends
 
-
 GetStdHandle PROTO, nStdHandle:DWORD
 
 ExitProcess PROTO :DWORD
@@ -68,7 +67,6 @@ WORD 0Fh, 0Eh,0Dh,0Ch, 0Bh, 0Ah, 9, 8, 7, 6
 WORD 0Fh, 0Eh,0Dh,0Ch, 0Bh, 0Ah, 1,7,2,3
 xyPos COORD <1,2>
 
-
 .code
 main PROC
 
@@ -90,16 +88,12 @@ BufSize-2,
 ADDR bytesRead,
 0
 
-
-
-
 INVOKE WriteConsoleOutputAttribute,
 inputHandle,
 ADDR attributes,
 bufSize-2,
 xyPos,
 ADDR bytesRead
-
 
 INVOKE WriteConsoleOutputCharacter,
 inputHandle,
